@@ -1,0 +1,217 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f7f1f1; /* White */
+  /* background-image: linear-gradient(to bottom, #b4b2b2, #3e3e3e); Subtle gradient */
+}
+
+
+main {
+  flex: 1; /* Pushes the footer to the bottom */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #006531; 
+  color: white; /* White text */
+  text-align: center; /* Center-align the text */
+  padding: 20px; 
+  border-bottom: 2px solid #FFD700; 
+}
+
+.App-header h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem; /* Large, bold header text */
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.header-text {
+  font-size: 1.5em; 
+  font-weight: bold; 
+  margin: 10px 0; 
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 20.5px; /* Larger font size */
+  font-weight: 500; /* Bold */
+  color: #333333; 
+  text-transform: uppercase; 
+  letter-spacing: 4px; /* Adds spacing between letters */
+  margin: 50px; /* Vertical spacing */
+  text-align: center; /* Centre the text */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Button Styling */
+button {
+  width: 100%;
+  padding: 12px 20px;
+  margin-top: 20px;
+  background-color: #F4D03F; 
+  color: black;
+  border: 3px solid #1ABC9C; /* Consistent border style */
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #F39C12; /* Hover background */
+  transform: scale(1.05); /* Hover effect */
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #00512d; /* Consistent form background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #c8f2d4;
+  margin: 10px 0;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+/* Premier League Logo Styling */
+.plm-logo {
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%; 
+  margin: 10px; 
+  object-fit: cover; 
+}
+
+/* Footer Styles */
+.App-footer {
+  background-color: rgba(0, 101, 49, 0.85); /* Dark green with slight transparency */
+  color: white; /* White text for contrast */
+  text-align: center;
+  padding: 10px 0; /* Vertical padding */
+  width: 100%; /* Full width */
+  font-size: 1rem; /* Larger text for readability */
+  font-family: 'Roboto', sans-serif;
+  border-top: 2px solid #FFD700;
+  margin-top: auto; /* Ensures the footer stays at the bottom */
+  padding: 5px; /* Extra spacing between footer and nearby elements */
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  gap: 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white; /* White links */
+  background-color: #006531; /* Match the header background */
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #FFD700; /* Yellow highlight on hover */
+  color: black; /* Black text on hover for readability */
+}
+
+.highlight {
+  color: #000000c1; /* home page text colour*/
+  font-weight: bold; /* Make it bold */
+  font-size: 1.2em; /* Slightly larger font */
+}
+
+.welcome-message {
+  color: #000000; /* Gold */
+  font-weight: bold;
+  font-size: 2rem; /* Adjust as needed */
+  text-align: center; /* Keeps it centered */
+  margin: 20px 0; /* Add spacing */
+}
+
+/* Main Content Styling */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Adds spacing between elements */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* Consistent padding */
+  font-size: 1.2em;
+}
+
+.home-content {
+  width: 100%;
+  max-width: 1200px; /* Adjusts to fit screens nicely */
+  margin: 0 auto; /* Center horizontally */
+}
+
+.main-image {
+  width: 100%; /* Takes up the full container width */
+  border-radius: 10px; /* Adds rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  margin: 20px 0; /* Adds spacing above and below */
+}

@@ -1,0 +1,9 @@
+body {
+  background-color: #E9F7EF; /* Light grass green background */
+  color: #333; /* Dark text for contrast */
+  font-family: 'Roboto', sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
